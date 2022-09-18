@@ -1,4 +1,4 @@
-@import url(./style.css);
+@import url(./base.css);
 .container{
     display: grid;
     grid-template-columns: auto;
@@ -7,31 +7,33 @@
     min-height: 100vh;
 }
 
+
 .card{
-    padding: 1em;
+    display: grid;
+    padding: 15px;
     max-width: var(--max-width);
+    text-align: center;
     background-color: var(--bg-card);
     border-radius: 1.5em;
 }
-
-
-.qr__image{
-    display: block;
-    margin: 0 auto;
-    border-radius: .8em;
+.card,.card__figure{
+    row-gap: 30px;
 }
-
-.qr__text{
-    text-align: center;
-
-}
-
-.text--1{
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.text--2{
-    margin: 1rem 0;
-    color: var(--color);
-}
+    .card__figure{
+        display: grid;
+    }
+        .card__figure--image{
+            display: block;
+            margin: 0 auto;
+            border-radius: .8em;
+        }
+        .card__figure--caption{
+            padding: 0 15px;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+    .card__text{
+        color: var(--color);
+        padding: 0 15px;
+        padding-bottom: 30px;
+    }

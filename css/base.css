@@ -29,7 +29,7 @@ Font
 
 
 :root{
-    --max-width: 375px;
+    --max-width: 320px;
     --font-size: 15px;
     --bg: hsl(212, 45%, 89%);
     --bg-card: hsl(0, 0%, 100%);
@@ -40,7 +40,7 @@ Font
 *,
 *::before,
 *::after{
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 html{
