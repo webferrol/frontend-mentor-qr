@@ -1,7 +1,37 @@
+@import url(./style.css);
 .container{
     display: grid;
-    grid-template-columns: 400px;
+    grid-template-columns: auto;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+}
+
+.card{
+    padding: 1em;
+    max-width: var(--max-width);
+    background-color: var(--bg-card);
+    border-radius: 1.5em;
+}
+
+
+.qr__image{
+    display: block;
+    margin: 0 auto;
+    border-radius: .8em;
+}
+
+.qr__text{
+    text-align: center;
+
+}
+
+.text--1{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.text--2{
+    margin: 1rem 0;
+    color: var(--color);
 }
