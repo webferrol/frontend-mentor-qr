@@ -1,0 +1,39 @@
+@import url(./base.css);
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.card{
+    display: grid;
+    padding: 15px;
+    max-width: var(--max-width);
+    text-align: center;
+    background-color: var(--bg-card);
+    border-radius: 1.5em;
+}
+.card,.card__figure{
+    row-gap: 30px;
+}
+    .card__figure{
+        display: grid;
+    }
+        .card__figure--image{
+            display: block;
+            margin: 0 auto;
+            border-radius: .8em;
+        }
+        .card__figure--caption{
+            padding: 0 15px;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+    .card__text{
+        color: var(--color);
+        padding: 0 15px;
+        padding-bottom: 30px;
+    }
